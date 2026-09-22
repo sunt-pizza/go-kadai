@@ -48,9 +48,6 @@ func main() {
 	for _, t := range Todos {
 		printTodos(t)
 	}
-	// printTodos(Todos[0])
-	// printTodos(Todos[1])
-	// printTodos(Todos[2])
 	fmt.Println()
 
 	Completed(&Todos[0])
@@ -61,7 +58,4 @@ func main() {
 	for _, t := range Todos {
 		printTodos(t)
 	}
-	// printTodos(Todos[0])
-	// printTodos(Todos[1])
-	// printTodos(Todos[2])
 }
