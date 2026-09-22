@@ -22,26 +22,10 @@ func printTodos(p ToDo) {
 }
 
 func main() {
-	item1 := ToDo{
-		ID: 1,
-		Title: "学習計画",
-		Completed: false, 
-	}
-
-	item2 := ToDo{
-		ID: 2,
-		Title: "環境構築",
-		Completed: false, 
-	}
-
-	item3 := ToDo{
-		ID: 3,
-		Title: "基礎文法",
-		Completed: false, 
-	}
-
 	Todos := []ToDo{
-		item1, item2, item3,
+		{ID: 1, Title: "学習計画", Completed: false},
+		{ID: 2, Title: "環境構築", Completed: false},
+		{ID: 3, Title: "基礎文法", Completed: false},
 	}
 
 	fmt.Println("--- ToDoリスト（初期状態） ---")
