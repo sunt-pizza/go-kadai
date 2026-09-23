@@ -1,0 +1,32 @@
+---
+Q1. Hello Linux という文字を画面に出力してください。
+次に export を使って環境変数 SAMPLENAME にご自身の名前を設定し、My name is <名前> と出力してください。
+最後に set で変数一覧を表示し、NAME で grep して SAMPLENAME が他の変数と一緒に出てくることを確認してください。
+
+Q2. Q1 で作成した SAMPLENAME を unset で削除してください。
+echo で値が空になったこと、set | grep NAME で一覧からも消えたことを確認してください。
+
+Q3. ls と go のコマンド本体がどこにあるか、which を使って調べてください。
+
+Q4. 最初から設定されている環境変数 HOME と PATH の中身を echo で表示してください。
+PATH については、Q3 で調べた ls の置き場所が含まれていることを確認してください。
+
+Q5. OS の情報を表示し、現在のディレクトリの場所を確認し、cat のマニュアルで -n の意味を調べてください。
+最後に history を使って、今日 echo を何回使ったか数えてください。
+---
+
+echo "Hello Linux"
+export SAMPLENAME="oseki"
+echo My name is $SAMPLENAME
+set | grep NAME
+set -e SAMPLENAME
+echo $SAMPLENAME
+set | grep NAME
+which ls
+which go
+echo $HOME
+echo $PATH
+uname
+pwd
+man cat
+history echo
